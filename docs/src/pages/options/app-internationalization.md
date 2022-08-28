@@ -39,6 +39,7 @@ export default ({ app }) => {
   const i18n = createI18n({
     locale: 'en-US',
     globalInjection: true,
+    allowComposition: true, // If you are going to use composition API add this. otherwise you'll get an error
     messages
   })
 
